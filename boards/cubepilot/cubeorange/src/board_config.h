@@ -141,7 +141,7 @@
 #define BOARD_ADC_HIPOWER_5V_OC (!px4_arch_gpioread(GPIO_nVDD_5V_HIPOWER_OC))
 
 /* This board provides a DMA pool and APIs */
-#define BOARD_DMA_ALLOC_POOL_SIZE 5120
+#define BOARD_DMA_ALLOC_POOL_SIZE 7168
 
 /* This board provides the board_on_reset interface */
 #define BOARD_HAS_ON_RESET 1

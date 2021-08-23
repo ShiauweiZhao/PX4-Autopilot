@@ -125,7 +125,7 @@
 #define BOARD_HAS_PWM  DIRECT_PWM_OUTPUT_CHANNELS
 
 /* This board provides a DMA pool and APIs */
-#define BOARD_DMA_ALLOC_POOL_SIZE 5120
+#define BOARD_DMA_ALLOC_POOL_SIZE 7168
 
 /* This board provides the board_on_reset interface */
 #define BOARD_HAS_ON_RESET 1
