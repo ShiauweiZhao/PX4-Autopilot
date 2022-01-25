@@ -50,7 +50,7 @@
 
 MEMORY
 {
-    flash (rx)  		: ORIGIN = 0x08010000, LENGTH = 448K
+    flash (rx)  		: ORIGIN = 0x08010000, LENGTH = 950K
     shared_sram (rwx)   : ORIGIN = 0x20000000, LENGTH = 256
     sram (rwx)   		: ORIGIN = 0x20000100, LENGTH =  192K - 256
 }
