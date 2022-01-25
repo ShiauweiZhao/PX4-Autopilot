@@ -41,4 +41,4 @@
 
 //  DMA2 Channel/Stream Selections
 //--------------------------------------------//---------------------------//----------------
-#define DMAMAP_TIM1_CH2   DMAMAP_TIM1_CH2_2   // DMA2, Stream 6, Channel 6    SLED
+// #define DMAMAP_TIM1_CH2   DMAMAP_TIM1_CH2_2   // DMA2, Stream 6, Channel 6    SLED
