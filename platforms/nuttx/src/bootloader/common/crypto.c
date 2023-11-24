@@ -46,12 +46,11 @@ bool verify_app(uint16_t idx, const image_toc_entry_t *toc_entries)
 	bool ret;
 
 	uint8_t sig_idx = toc_entries[idx].signature_idx;
-	uint8_t sig_key = toc_entries[idx].signature_key;
 	crypto_session_handle_t handle = crypto_open(BOOTLOADER_SIGNING_ALGORITHM);
 	app_signature_ptr = (volatile uint8_t *)toc_entries[sig_idx].start;
 	len = (size_t)toc_entries[idx].end - (size_t)toc_entries[idx].start;
 
-	ret =  crypto_signature_check(handle, sig_key, (const uint8_t *)app_signature_ptr,
+	ret =  crypto_signature_check(handle, idx, (const uint8_t *)app_signature_ptr,
 				      (const uint8_t *)toc_entries[idx].start, len);
 
 	crypto_close(&handle);
